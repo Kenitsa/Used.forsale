@@ -1,0 +1,168 @@
+@media screen and (max-width: 1150px) {
+
+  .container {
+    padding: 0 15px;
+    max-width: 97%;
+  }
+
+  header div.container .humburger, .menu-layout div.container .burger-active {
+    right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  section.top .top-info {
+    flex-direction: column;
+
+    div.top-description {
+      margin-right: 0;
+    }
+
+    .top-card {
+      margin-top: 30px;
+    }
+
+  }
+
+  section.charts-section {
+    flex-direction: column;
+    div.dashboard {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .concept-1 {
+    header {
+      padding: 20px 0;
+    }
+
+      section.top.cover {
+      margin: -77px 0 10px;
+    }
+  }
+
+  h1 {
+    font-size: 26px;
+    padding-bottom: 20px;
+    line-height: 35px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  section.top {
+    padding-bottom: 130px !important;
+    .top-info {
+      div.top-card {
+        padding: 20px;
+        > div {
+          flex-direction: column;
+          .images {
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+          .person {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  section.charts-section {
+    .charts {
+      margin-right: 0 !important;
+      .chart div.choose-time {
+        justify-content: center;
+      }
+    }
+  }
+
+  footer {
+    padding: 40px 0 40px !important;
+
+    div.footer-content {
+      padding: 20px 25px;
+
+      &::before {
+        display: none;
+      }
+
+      > div {
+        flex-direction: column;
+      }
+
+      .how-are-we {
+        margin: 10px 0 30px;
+      }
+
+      .contact-info {
+        padding-left: 0;
+      }
+
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 520px) {
+
+  header div.container div.humburger, .menu-layout div.container .burger-active {
+    right: 11px;
+  }
+
+  section.charts-section div.charts .chart.lines .chart-container {
+    min-height: 210px;
+  }
+
+  section.charts-section div.charts .chart {
+
+    .chart-container {
+      min-height: 303px;
+      padding: 0 10px 15px;
+
+      &::before {
+        height: 20px;
+      }
+
+      div {
+        width: 20px;
+      }
+    }
+
+    .chart-count {
+      padding: 8.5px 15px 0;
+    }
+
+    .choose-time span {
+      margin: 0 8px;
+    }
+
+  }
+
+  footer {
+
+    div.footer-content div.how-are-we {
+      flex-direction: column;
+
+      .crew .subtitle {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}

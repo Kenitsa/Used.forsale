@@ -1,0 +1,87 @@
+footer {
+  padding: 68px 0 40px;
+
+  .footer-content {
+    background: #FFFFFF;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    padding: 30px 40px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 35%;
+      width: 1px;
+      background-color: #E8EDF5;
+    }
+
+    .how-are-we {
+      flex-basis: 65%;
+
+      .boss {
+        margin-right: 20px;
+      }
+
+      .crew {
+          .title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+            color: #21242B;
+            margin-bottom: 3px;
+          }
+        .subtitle {
+          font-size: 13px;
+          line-height: 200%;
+          color: #21242B;
+          margin-bottom: 40px;
+        }
+      }
+
+      .members {
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+    .contact-info {
+      flex: 1;
+      padding-left: 75px;
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        color: #21242B;
+        margin-bottom: 5px;
+      }
+
+      .info {
+        font-size: 13px;
+        line-height: 200%;
+        color: #21242B;
+      }
+
+      .contact-item {
+        align-items: flex-start;
+        margin-bottom: 5px;
+        &:nth-last-of-type(1){
+          margin-bottom: 15px;
+        }
+        img {
+          margin-top: 6px;
+          margin-right: 8px
+        }
+      }
+
+      .g-link {
+        font-size: 13px;
+        line-height: 200%;
+        text-decoration-line: underline;
+        color: #F69C38;
+      }
+    }
+  }
+}

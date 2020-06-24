@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F4F7FC; }
+
+header {
+  padding: 15px 0;
+  text-align: center; }
+  header .logo {
+    display: inline-block; }
+  header .container {
+    position: relative; }
+    header .container .humburger {
+      position: absolute;
+      right: -11px;
+      top: 0;
+      height: 19px;
+      width: 30px;
+      cursor: pointer;
+      opacity: 1;
+      transition: .5s all; }
+      header .container .humburger.open {
+        opacity: 0; }
+      header .container .humburger .humburger-container span {
+        position: absolute;
+        background-color: #c4c4c4;
+        height: 3px; }
+        header .container .humburger .humburger-container span:nth-child(1) {
+          top: 0;
+          left: 0;
+          width: 25px; }
+        header .container .humburger .humburger-container span:nth-child(2) {
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          right: 0; }
+        header .container .humburger .humburger-container span:nth-child(3) {
+          bottom: 0;
+          right: 0;
+          width: 25px; }
+
+.menu-layout {
+  position: absolute;
+  right: 0;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .4s all; }
+  .menu-layout.active {
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%; }
+  .menu-layout .container {
+    position: relative;
+    padding-top: 61px;
+    color: #fff; }
+    .menu-layout .container .burger-active {
+      position: absolute;
+      right: -11px;
+      top: 16px;
+      height: 19px;
+      width: 30px;
+      cursor: pointer; }
+      .menu-layout .container .burger-active .humburger-container {
+        position: relative;
+        height: 19px;
+        width: 30px; }
+        .menu-layout .container .burger-active .humburger-container span {
+          position: absolute;
+          background-color: #fff;
+          height: 3px; }
+          .menu-layout .container .burger-active .humburger-container span:nth-child(1) {
+            top: 7px;
+            left: 3px;
+            width: 25px;
+            transform: rotate(45deg); }
+          .menu-layout .container .burger-active .humburger-container span:nth-child(2) {
+            bottom: 9px;
+            right: 2px;
+            width: 25px;
+            transform: rotate(-45deg); }
+
+footer {
+  padding: 68px 0 40px; }
+  footer .footer-content {
+    background: #FFFFFF;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    padding: 30px 40px;
+    position: relative; }
+    footer .footer-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 35%;
+      width: 1px;
+      background-color: #E8EDF5; }
+    footer .footer-content .how-are-we {
+      flex-basis: 65%; }
+      footer .footer-content .how-are-we .boss {
+        margin-right: 20px; }
+      footer .footer-content .how-are-we .crew .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        color: #21242B;
+        margin-bottom: 3px; }
+      footer .footer-content .how-are-we .crew .subtitle {
+        font-size: 13px;
+        line-height: 200%;
+        color: #21242B;
+        margin-bottom: 40px; }
+      footer .footer-content .how-are-we .members img {
+        margin-right: 10px; }
+    footer .footer-content .contact-info {
+      flex: 1;
+      padding-left: 75px; }
+      footer .footer-content .contact-info .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        color: #21242B;
+        margin-bottom: 5px; }
+      footer .footer-content .contact-info .info {
+        font-size: 13px;
+        line-height: 200%;
+        color: #21242B; }
+      footer .footer-content .contact-info .contact-item {
+        align-items: flex-start;
+        margin-bottom: 5px; }
+        footer .footer-content .contact-info .contact-item:nth-last-of-type(1) {
+          margin-bottom: 15px; }
+        footer .footer-content .contact-info .contact-item img {
+          margin-top: 6px;
+          margin-right: 8px; }
+      footer .footer-content .contact-info .g-link {
+        font-size: 13px;
+        line-height: 200%;
+        text-decoration-line: underline;
+        color: #F69C38; }
+
+body.open {
+  overflow: hidden; }
+
+h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  color: #ffffff;
+  padding-bottom: 39px; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    padding: 0;
+    margin: 0; }
+
+p {
+  margin: 0 0 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #21242B;
+  line-height: 150%; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
+.cover {
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important; }
+
+.d-flex {
+  display: flex; }
+
+.button {
+  padding: 8px 44px;
+  background: #F69C38;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 150%;
+  z-index: 5;
+  position: relative; }
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 0 15px;
+    max-width: 97%; }
+  header div.container .humburger, .menu-layout div.container .burger-active {
+    right: 20px; } }
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 32px; }
+  section.top .top-info {
+    flex-direction: column; }
+    section.top .top-info div.top-description {
+      margin-right: 0; }
+    section.top .top-info .top-card {
+      margin-top: 30px; }
+  section.charts-section {
+    flex-direction: column; }
+    section.charts-section div.dashboard {
+      margin-top: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .concept-1 header {
+    padding: 20px 0; }
+  .concept-1 section.top.cover {
+    margin: -77px 0 10px; }
+  h1 {
+    font-size: 26px;
+    padding-bottom: 20px;
+    line-height: 35px; }
+  .container {
+    max-width: 90%; }
+  section.top {
+    padding-bottom: 130px !important; }
+    section.top .top-info div.top-card {
+      padding: 20px; }
+      section.top .top-info div.top-card > div {
+        flex-direction: column; }
+        section.top .top-info div.top-card > div .images {
+          margin-right: 0;
+          margin-bottom: 15px; }
+        section.top .top-info div.top-card > div .person {
+          text-align: center; }
+  section.charts-section .charts {
+    margin-right: 0 !important; }
+    section.charts-section .charts .chart div.choose-time {
+      justify-content: center; }
+  footer {
+    padding: 40px 0 40px !important; }
+    footer div.footer-content {
+      padding: 20px 25px; }
+      footer div.footer-content::before {
+        display: none; }
+      footer div.footer-content > div {
+        flex-direction: column; }
+      footer div.footer-content .how-are-we {
+        margin: 10px 0 30px; }
+      footer div.footer-content .contact-info {
+        padding-left: 0; } }
+
+@media screen and (max-width: 520px) {
+  header div.container div.humburger, .menu-layout div.container .burger-active {
+    right: 11px; }
+  section.charts-section div.charts .chart.lines .chart-container {
+    min-height: 210px; }
+  section.charts-section div.charts .chart .chart-container {
+    min-height: 303px;
+    padding: 0 10px 15px; }
+    section.charts-section div.charts .chart .chart-container::before {
+      height: 20px; }
+    section.charts-section div.charts .chart .chart-container div {
+      width: 20px; }
+  section.charts-section div.charts .chart .chart-count {
+    padding: 8.5px 15px 0; }
+  section.charts-section div.charts .chart .choose-time span {
+    margin: 0 8px; }
+  footer div.footer-content div.how-are-we {
+    flex-direction: column; }
+    footer div.footer-content div.how-are-we .crew .subtitle {
+      margin-bottom: 20px; } }
+
+section.top {
+  background-image: url("../images/background.svg");
+  padding: 58px 0 250px; }
+  section.top .top-info {
+    justify-content: space-between; }
+    section.top .top-info .top-description {
+      margin-right: 43px; }
+      section.top .top-info .top-description > p {
+        margin-top: 14px;
+        color: #fff;
+        max-width: 622px; }
+      section.top .top-info .top-description .source > p {
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 3px; }
+      section.top .top-info .top-description .source div a {
+        margin-right: 30px; }
+    section.top .top-info .top-card {
+      background: #fff;
+      box-shadow: 0 4px 34px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      padding: 14px 32px 9px 35px;
+      max-width: 445px;
+      box-sizing: border-box;
+      min-height: 185px; }
+      section.top .top-info .top-card .text .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 4px; }
+      section.top .top-info .top-card .images {
+        margin-right: 17px; }
+        section.top .top-info .top-card .images .person img {
+          border-radius: 50%;
+          margin-bottom: 5px; }
+        section.top .top-info .top-card .images .socials {
+          justify-content: center; }
+          section.top .top-info .top-card .images .socials a {
+            display: inline-flex;
+            padding: 5px 10px; }
+
+section.charts-section {
+  margin-top: -50px; }
+  section.charts-section .charts {
+    flex: 1;
+    margin-right: 97px; }
+    section.charts-section .charts .chart.lines .chart-container canvas {
+      position: absolute;
+      left: 0;
+      max-width: 100%; }
+    section.charts-section .charts .chart .slide[data-tab] {
+      display: none; }
+    section.charts-section .charts .chart .slide[data-tab="1-a"], section.charts-section .charts .chart .slide[data-tab="1-b"], section.charts-section .charts .chart .slide[data-tab="1-c"], section.charts-section .charts .chart .slide[data-tab="1-d"] {
+      display: block; }
+    section.charts-section .charts .chart .title-bold {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      color: #21242B;
+      margin-bottom: 23px; }
+    section.charts-section .charts .chart p {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 150%;
+      color: #21242B; }
+    section.charts-section .charts .chart .choose-time {
+      justify-content: flex-end; }
+      section.charts-section .charts .chart .choose-time span {
+        text-align: center;
+        font-size: 12px;
+        color: #C9C9C9;
+        margin: 0 15px;
+        cursor: pointer;
+        line-height: 28px; }
+        section.charts-section .charts .chart .choose-time span.active {
+          color: #FFFFFF;
+          background: #F69C38;
+          box-shadow: 0 2px 9px rgba(0, 0, 0, 0.12);
+          border-radius: 38px;
+          height: 28px;
+          width: 99px; }
+    section.charts-section .charts .chart .chart-container {
+      position: relative;
+      border-left: 1px solid #c9c9c9;
+      border-bottom: 1px solid #c9c9c9;
+      min-height: 350px;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 20px 15px;
+      background-image: linear-gradient(0deg, #f4f7fc 47.83%, #ebeef2 47.83%, #ebeef2 50%, #f4f7fc 50%, #f4f7fc 97.83%, #ebeef2 97.83%, #ebeef2 100%);
+      background-size: 46.00px 46.00px; }
+      section.charts-section .charts .chart .chart-container::before {
+        content: '';
+        position: absolute;
+        left: 1px;
+        right: 0;
+        top: 0;
+        height: 41px;
+        background-color: #F4F7FC; }
+      section.charts-section .charts .chart .chart-container div {
+        background: linear-gradient(180deg, #F69A34 0%, #F21D95 142.59%);
+        border-radius: 50px;
+        width: 34px; }
+    section.charts-section .charts .chart .chart-count {
+      justify-content: space-between;
+      padding: 8.5px 33px 0;
+      font-size: 12px;
+      line-height: 150%;
+      text-align: center;
+      color: #C9C9C9; }
+  section.charts-section .dashboard {
+    flex-basis: 31%; }
+    section.charts-section .dashboard .dashboard-item {
+      background: #FFFFFF;
+      box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+      border-radius: 8px;
+      margin-bottom: 10px; }
+      section.charts-section .dashboard .dashboard-item.mb {
+        margin-bottom: 30px; }
+      section.charts-section .dashboard .dashboard-item .title {
+        align-items: center;
+        padding: 11px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #757575;
+        border-bottom: 1px solid #E8EDF5; }
+        section.charts-section .dashboard .dashboard-item .title img {
+          margin-right: 20px; }
+      section.charts-section .dashboard .dashboard-item .list {
+        padding: 14px 25px 14px 60px; }
+        section.charts-section .dashboard .dashboard-item .list.checkbox {
+          padding-left: 78px; }
+          section.charts-section .dashboard .dashboard-item .list.checkbox ul li {
+            cursor: pointer; }
+            section.charts-section .dashboard .dashboard-item .list.checkbox ul li::before {
+              content: '';
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background-color: #ECECEC;
+              top: 4px;
+              left: -15px; }
+            section.charts-section .dashboard .dashboard-item .list.checkbox ul li.active::after {
+              content: '';
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #FE7843;
+              left: -11px;
+              top: 8px; }
+        section.charts-section .dashboard .dashboard-item .list p {
+          font-size: 13px;
+          line-height: 200%;
+          color: #21242B; }
+        section.charts-section .dashboard .dashboard-item .list ul {
+          list-style-type: none; }
+          section.charts-section .dashboard .dashboard-item .list ul li {
+            font-size: 13px;
+            line-height: 200%;
+            color: #21242B;
+            position: relative;
+            padding-left: 8px; }
+            section.charts-section .dashboard .dashboard-item .list ul li::before {
+              content: '·';
+              position: absolute;
+              top: -1px;
+              left: 0;
+              font-weight: 700; }
+      section.charts-section .dashboard .dashboard-item.colorful {
+        background: linear-gradient(163.25deg, #FD907B 9.89%, #FEB066 89.32%), linear-gradient(163.25deg, #FD907B 9.89%, #FEB066 89.32%); }
+        section.charts-section .dashboard .dashboard-item.colorful .title {
+          color: #fff;
+          border-bottom: 1px solid #DF9466; }
+        section.charts-section .dashboard .dashboard-item.colorful .list ul li {
+          color: #fff; }
+
+.concept-1 header {
+  text-align: left;
+  overflow: hidden; }
+  .concept-1 header .container .humburger::before {
+    content: url("../images/burger-bg.svg");
+    position: absolute;
+    top: -84px;
+    left: -43px; }
+  .concept-1 header .container .humburger span {
+    background-color: #fff; }
+
+.concept-1 footer {
+  padding: 28px 0 80px; }
+
+.concept-1 h1 {
+  padding-bottom: 0; }
+
+.concept-1 section.top {
+  margin: -67px 0 95px;
+  padding-top: 119px;
+  background-image: url("../images/background-concept1.svg"); }
+  .concept-1 section.top .top-info {
+    align-items: flex-start; }
+    .concept-1 section.top .top-info .top-card {
+      margin-top: 50px;
+      position: relative; }
+      .concept-1 section.top .top-info .top-card::before {
+        position: absolute;
+        content: url("../images/triangle.svg");
+        bottom: 0;
+        left: 35px;
+        transform: translateY(50%); }
+    .concept-1 section.top .top-info .top-description {
+      flex-basis: 50%; }

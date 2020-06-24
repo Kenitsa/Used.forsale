@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Used forsale</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="concept-1">
+<header>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="./images/logo_white.svg" alt="Logo">
+        </a>
+        <div class="humburger">
+            <div class="humburger-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="top cover">
+        <div class="container">
+            <div class="d-flex top-info">
+                <div class="top-description">
+                    <h1>Refurbished & Used : market update 2020</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    </p>
+                    <div class="source">
+                        <p>Sources of data:</p>
+                        <div class="d-flex">
+                            <a href="#">
+                                <img src="./images/amazon.svg" alt="Sources of data">
+                            </a>
+                            <a href="#">
+                                <img src="./images/fb.svg" alt="Sources of data">
+                            </a>
+                            <a href="#">
+                                <img src="./images/g+.svg" alt="Sources of data">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="d-flex">
+                        <div class="images">
+                            <div class="person">
+                                <img src="./images/person.svg" alt="Person">
+                            </div>
+                            <div class="d-flex socials">
+                                <a href="#">
+                                    <img src="./images/in.svg" alt="Social Media LinkedIn">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="Social Media Twitter">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title">Vincent Vandegans</div>
+                            <p>lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad
+                            </p>
+                            <a href="#" class="button">Contact me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="charts-section d-flex container">
+        <div class="charts">
+
+            <div class="chart">
+                <div class="title-bold">
+                    Used stuff - May 2020
+                </div>
+
+                <div class="d-flex choose-time">
+                    <span class="active" data-tab="1-a">This month</span>
+                    <span data-tab="2-a">Last month</span>
+                    <span data-tab="3-a">Last year</span>
+                </div>
+
+                <div class="slide" data-tab="1-a">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="2-a">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="3-a">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="chart-count d-flex">
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                </div>
+
+
+                <p>Volume of products for sale on the various second hand websites</p>
+
+            </div>
+
+            <div class="chart lines">
+
+                <div class="d-flex choose-time">
+                    <span class="active" data-tab="1-b">This month</span>
+                    <span data-tab="2-b">Last month</span>
+                    <span data-tab="3-b">Last year</span>
+                </div>
+
+                <div class="slide" data-tab="1-b">
+                    <div class="chart-container d-flex">
+                        <canvas id="orange" height="350" width="670"></canvas>
+                        <canvas id="gray" height="350" width="670"></canvas>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="2-b">
+                    <div class="chart-container d-flex">
+                        <canvas id="orange-2" height="350" width="670"></canvas>
+                        <canvas id="gray-2" height="350" width="670"></canvas>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="3-b">
+                    <div class="chart-container d-flex">
+                        <canvas id="orange-3" height="350" width="670"></canvas>
+                        <canvas id="gray-3" height="350" width="670"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-count d-flex">
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                </div>
+
+            </div>
+
+            <div class="chart">
+                <p>
+                    Top products searched this month (Google))
+                </p>
+
+                <div class="d-flex choose-time">
+                    <span class="active" data-tab="1-b">This month</span>
+                    <span data-tab="2-c">Last month</span>
+                    <span data-tab="3-c">Last year</span>
+                </div>
+
+                <div class="slide" data-tab="1-c">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="2-c">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="3-c">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="chart-count d-flex">
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                </div>
+
+
+                <p>Number of products in sale per category</p>
+
+            </div>
+
+            <div class="chart">
+
+                <div class="d-flex choose-time">
+                    <span class="active" data-tab="1-d">This month</span>
+                    <span data-tab="2-d">Last month</span>
+                    <span data-tab="3-d">Last year</span>
+                </div>
+
+                <div class="slide" data-tab="1-d">
+                    <div class="chart-container d-flex" id="demo">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="2-d">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="slide" data-tab="3-d">
+                    <div class="chart-container d-flex">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+
+                <div class="chart-count d-flex">
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                </div>
+
+
+                <p>Average price per category of products</p>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="dashboard-item">
+                <div class="title d-flex">
+                    <img src="./images/winner.svg" alt="Dashboard icon">
+                    <span>Top winners this month</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Ipod +300%</li>
+                        <li>Iphone +155%</li>
+                        <li>Nintendo Switch +10%</li>
+                        <li>Yoga gym +5%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-item colorful">
+                <div class="title d-flex">
+                    <img src="./images/hands.svg" alt="Dashboard icon">
+                    <span> Top Loosers this month</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Mouse -300%</li>
+                        <li>Samsung -155%</li>
+                        <li>Kayak -10%</li>
+                        <li>Fire wood +5%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-item mb">
+                <div class="title d-flex">
+                    <img src="./images/tools-and-utensils.svg" alt="Dashboard icon">
+                    <span>Top Brands for this month</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Vintage Woods</li>
+                        <li>Levis Jeans</li>
+                        <li>Kodak</li>
+                        <li>Celvin Klien</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-item mb">
+                <div class="title d-flex">
+                    <img src="./images/mail.svg" alt="Dashboard icon">
+                    <span>What is your preferred shipping method?</span>
+                </div>
+                <div class="list checkbox">
+                    <ul>
+                        <li>Hand to hand</li>
+                        <li>Standard mail</li>
+                        <li>UPS fast delivery</li>
+                        <li>Airplay</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-item mb">
+                <div class="title d-flex">
+                    <img src="./images/computer.svg" alt="Dashboard icon">
+                    <span>Second hand websites & apps</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Gumtree +300%</li>
+                        <li>Craigslist +155%</li>
+                        <li>Vinted +10%</li>
+                        <li>Offer UP +5%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-item mb">
+                <div class="title d-flex">
+                    <img src="./images/newspaper.svg" alt="Dashboard icon">
+                    <span>Second Hand maker news</span>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="d-flex">
+
+                <div class="how-are-we d-flex">
+                    <div class="boss">
+                        <img src="./images/boss.svg" alt="Boss img">
+                    </div>
+                    <div class="crew">
+                        <div class="title">
+                            How are we?
+                        </div>
+                        <div class="subtitle">
+                            eRowz is a company...
+                        </div>
+                        <div class="d-flex members">
+                            <img src="./images/person-1.svg" alt="person">
+                            <img src="./images/person-2.svg" alt="person">
+                            <img src="./images/person-3.svg" alt="person">
+                            <img src="./images/person-4.svg" alt="person">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="title">
+                        Contact information
+                    </div>
+                    <div class="d-flex contact-item">
+                        <img src="./images/location.svg" alt="Phone">
+                        <div class="info">
+                            Adress: rue jeans bugers, 2 <br>
+                            7850 Enghien. Belgique
+                        </div>
+                    </div>
+                    <div class="d-flex contact-item">
+                        <img src="./images/phone.svg" alt="Location">
+                        <div class="info">
+                            Phone number: +32 2 398-18-27
+                        </div>
+                    </div>
+                    <a href="#" class="g-link">Google Map link</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="menu-layout">
+    <div class="container">
+        Menu Example
+        <div class="burger-active">
+            <div class="humburger-container">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
